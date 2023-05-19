@@ -53,7 +53,7 @@ function EditHome() {
         console.error('Failed to update content:', response.status);
       }
     } catch (error) {
-      console.error('Error updating content:', error);
+      console.error('Couldnt updating content:', error);
     }
   };
 
