@@ -1,0 +1,39 @@
+.page_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+  height: 55vh;
+  background-color: #e6e6e6;
+  box-shadow: 0px 5px 30px black;
+  border-radius: 0 0 15px 15px;
+  margin-bottom: 5vh;
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 14vh;
+    background: linear-gradient(90deg, rgba(58,174,225,1) 0%, rgba(95,205,254,1) 47%, rgba(58,174,225,1) 100%);
+    box-shadow: 0px 5px 30px black;
+    border-radius: 15px;
+
+    label{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      input {
+        width: 10vw;
+        height: 5vh;
+      }
+    }
+  }
+  button {
+    width: 10vw;
+    height: 5vh;
+    background: linear-gradient(90deg, rgba(58,174,225,1) 0%, rgba(95,205,254,1) 47%, rgba(58,174,225,1) 100%);
+    box-shadow: 0px 5px 30px black;
+  }   
+}
