@@ -13,7 +13,7 @@ app = Flask(__name__)
 CORS(app)
 
 basedir =  os.path.abspath(os.path.dirname(__file__))
-app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///' + os.path.join(basedir, 'app.sqlite')
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgres://tooffvfkoajacj:501d73927e7fc896f5b72ecaac41cb50e43ead733f056ecacb9a21be89fd2c7c@ec2-52-5-167-89.compute-1.amazonaws.com:5432/d9hp70e35dtmiu'
 app.config['MAIL_SERVER']='sandbox.smtp.mailtrap.io'
 app.config['MAIL_PORT'] = 2525
 app.config['MAIL_USERNAME'] = '4c5c7c9bedec3a'
