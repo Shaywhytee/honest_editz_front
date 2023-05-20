@@ -20,7 +20,7 @@ function EditContact() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/content/update', {
+      const response = await fetch('https://honesteditz-back.herokuapp.com/content/update', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

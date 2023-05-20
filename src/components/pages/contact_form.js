@@ -12,7 +12,7 @@ function ContactForm() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/send-email', { email, message });
+      const response = await axios.post('https://honesteditz-back.herokuapp.com//send-email', { email, message });
       setResponseMessage(response.data.success ? 'Email sent successfully' : 'Error Sending Email');
       setShowConfirmation(true);
     } catch (error) {

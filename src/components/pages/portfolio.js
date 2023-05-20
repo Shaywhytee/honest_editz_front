@@ -6,7 +6,7 @@ function Portfolio() {
   const [activeFilter, setActiveFilter] = useState("");
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:5000/video/all").then((response) => {
+    axios.get("https://honesteditz-back.herokuapp.com/video/all").then((response) => {
       setVideos(response.data);
     }).catch((error) => {
       console.error("Error fetching videos:", error);

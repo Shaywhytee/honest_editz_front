@@ -44,7 +44,7 @@ function EditPortfolio() {
     extractVideoInfo(newVideoLink)
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/video/add', {
+      const response = await fetch('https://honesteditz-back.herokuapp.com/video/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

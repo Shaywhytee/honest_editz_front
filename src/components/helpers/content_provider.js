@@ -11,7 +11,7 @@ export const ContentProvider = ({ children }) => {
 
   const fetchContentData = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/get/content')
+      const response = await fetch('https://honesteditz-back.herokuapp.com/get/content')
       const data = await response.json();
       setContentData(data);
     } catch (error) {

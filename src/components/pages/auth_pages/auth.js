@@ -12,7 +12,7 @@ function AdminLogin({history }) {
     e.preventDefault();
   
     try {
-      const response = await axios.post('http://127.0.0.1:5000/verify', {
+      const response = await axios.post('https://honesteditz-back.herokuapp.com//verify', {
         username,
         password
       }, {
